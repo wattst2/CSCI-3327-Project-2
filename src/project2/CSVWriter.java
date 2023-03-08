@@ -6,7 +6,7 @@ import java.io.IOException;
 
 /**
  * Solves a function and writes its outputs to a CSV file
- * @author tqwatts
+ * @author Ta'Quawn Watts
  *
  */
 public class CSVWriter {

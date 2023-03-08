@@ -6,8 +6,8 @@ public class TestCSVWriter {
 		CSVWriter test = new CSVWriter();
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the max X value: ");
-		int runs = scan.nextInt();
+		int run = scan.nextInt();
 		scan.close();
-		test.writeToCSV(runs);
+		test.writeToCSV(run);
 	}
 }
