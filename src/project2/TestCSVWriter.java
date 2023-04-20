@@ -1,13 +1,14 @@
 package project2;
-import java.io.IOException;
-import java.util.Scanner;
+
+/**
+ * Tests CSVWriter and its methods.
+ * @author Ta'Quawn Watts
+ */
 public class TestCSVWriter {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		CSVWriter test = new CSVWriter();
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter the max X value: ");
-		int run = scan.nextInt();
-		scan.close();
-		test.writeToCSV(run);
+		test.writeToCSV(-25, 25);
+		test.saltCSV("/Users/tqwatts/eclipse-workspace/Prob Stat Project2/data.csv", 5, 100);
+		test.smoothCSV("/Users/tqwatts/eclipse-workspace/Prob Stat Project2/saltedData.csv", 5);
 	}
 }
