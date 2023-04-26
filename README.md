@@ -17,15 +17,15 @@ This project contains:
   - Plotter.m - Graphs a function, salts the data, and smoothes the data in MatLab. Includes a PDF of the output
 - Research Project
   - Video Games Sales Excel dataset
-  - Report analysing Video Game Sales dataset
+  - Report analyzing Video Game Sales dataset
 - Video Tutorials
   - Apache Math JFreeCharts Tutorial - A video tutorial on adding Apache Commons Math Library version 3.61 and JFreeCharts version 1.0.19 to Eclipse
   - MatLab VDI Tutorial - A video tutorial on accessing MatLab through Stockton University's VDI service
 - Written Documents
   - Formula sheet of various statistics formulas
   - Report analysis data from Java CSVWriter class
-  - Report analysing data from Java JFreeChartsGrapher class
-  - Report analysing data from MatLab Plotter.m script
+  - Report analyzing data from Java JFreeChartsGrapher class
+  - Report analyzing data from MatLab Plotter.m script
   - Java Program Documentation
   - Project 2 Sources document
   - Project 2 Extra Credit Considerations document
