@@ -1,0 +1,17 @@
+a = -10;
+b = 10;
+x = linspace(0, 10, 100);
+y = x.^2 + 2 * x + 1;
+range = (b - a).*rand(size(x)) + a;
+saltY = y + range;
+smoothY = smoothdata(saltY);
+figure;
+subplot(3,1,1);
+plot(x,y);
+title('Original x^2 + 2x + 1');
+subplot(3,1,2);
+plot(x, saltY);
+title('Salted x^2 + 2x + 1');
+subplot(3,1,3);
+plot(x,smoothY);
+title('Smoothed x^2 + 2x + 1');
