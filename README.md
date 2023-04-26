@@ -18,6 +18,9 @@ This project contains:
 - Research Project
   - Video Games Sales Excel dataset
   - Report analysing Video Game Sales dataset
+- Video Tutorials
+  - Apache Math JFreeCharts Tutorial - A video tutorial on adding Apache Commons Math Library version 3.61 and JFreeCharts version 1.0.19 to Eclipse
+  - MatLab VDI Tutorial - A video tutorial on accessing MatLab through Stockton University's VDI service
 - Written Documents
   - Formula sheet of various statistics formulas
   - Report analysis data from Java CSVWriter class
@@ -25,6 +28,7 @@ This project contains:
   - Report analysing data from MatLab Plotter.m script
   - Java Program Documentation
   - Project 2 Sources document
+  - Project 2 Extra Credit Considerations document
   
 ## Sources
 - [MatLab tutorial](https://www.mathworks.com/help/matlab/creating_plots/using-high-level-plotting-functions.html)
