@@ -111,6 +111,5 @@ public class TestStatsLibrary {
 		System.out.println("\nUsing Chebyshev's theorem, the percentage of values that fall"
 				+ "\nbetween 123 and 179 for a dataset with mean of 151 and standard" + "\ndeviation of 14 is: "
 				+ tchebTheor);
-
 	}
 }

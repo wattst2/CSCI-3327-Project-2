@@ -15,7 +15,7 @@ import java.util.Collections;
 public class StatsLibrary {
 
 	/**
-	 * 
+	 * Calculates the mean of a list
 	 * @param inputNumbers inputNumbers is the list of double type numbers
 	 * @return The mean of inputNumbers
 	 */
@@ -29,7 +29,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the median of a list
 	 * @param inputNumbers inputNumbers is the list of double type numbers
 	 * @return the median of inputNumbers
 	 */
@@ -51,7 +51,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the mode of a list if there is one
 	 * @param inputNumbers inputNumbers is the list of double type numbers
 	 * @return The mode of the inputNumbers if there is one.
 	 */
@@ -95,7 +95,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the standard deviation of a list
 	 * @param inputNumbers inputNumbers is the list
 	 * @return the standard deviation of the list Uses
 	 *         {@link #findMean(ArrayList<Double>) findMean} to calculate the mean
@@ -136,7 +136,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Finds the union of two subsets
 	 * @param listA listA is the subset A containing integer elements
 	 * @param listB listB is the subset B containing integer elements
 	 * @return The union of subset A and subset B
@@ -162,7 +162,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Finds the intersection of two subsets
 	 * @param listA listA is the subset A containing integer elements
 	 * @param listB listB is the subset B containing integer elements
 	 * @return The intersection of listA and listB
@@ -189,7 +189,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Finds the complement of two subsets
 	 * @param inputList inputList is a list containing integer elements.
 	 * @param inputSet  inputSet is a list containing integer elements.
 	 * @return The complement of list.
@@ -216,7 +216,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the factorial of an integer
 	 * @param inputNum inputNum is the integer type number being input.
 	 * @return The factorial of inputNum.
 	 * @see <a href="https://www.javatpoint.com/factorial-program-in-java">Factorial
@@ -235,7 +235,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the combination of two integers
 	 * @param n n is the first integer type number being input.
 	 * @param r r is the second integer type number being input.
 	 * @return The combination of n and r. Uses {@link #factorial(int)} to calculate
@@ -255,7 +255,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the permutation of two integers
 	 * @param n is the first integer type number being input
 	 * @param r is the second integer type number being input
 	 * @return the permutation of n and r Uses {@link #factorial(int)} to calculate
@@ -274,7 +274,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the binomial distribution probability 
 	 * @param n n is the integer type number of trials
 	 * @param y y is the integer type number of successes
 	 * @param p p is the double type probability of a successful trial
@@ -302,7 +302,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the geometric distribution probability
 	 * @param n n is the integer type number of trials.
 	 * @param p p is the double type probability of a successful trial.
 	 * @return The Geometric Probability Distribution using n and p.
@@ -328,7 +328,7 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the hypergeometric distribution probability 
 	 * @param N N is the integer representing N in the hypergeometric distribution
 	 *          formula
 	 * @param n n is the integer representing n in the hypergeometric distribution
@@ -352,12 +352,12 @@ public class StatsLibrary {
 	}
 
 	/**
-	 * 
+	 * Calculates the Poisson distribution probability 
 	 * @param x      x is the integer representing x in the poisson distribution
 	 *               formula
 	 * @param lambda lambda is the integer representing lambda in the poisson distribution
 	 *               formula
-	 * @return the Poisson distribution probability using the formula Uses
+	 * @return the Poisson distribution probability using the formula using
 	 *         {@link #factorial(int)} to calculate the denominator of the formula.
 	 * @see <a href=
 	 *      "https://stackoverflow.com/questions/4591206/arithmeticexception-non-terminating-decimal-expansion-no-exact-representable">BigDecimal
@@ -376,7 +376,7 @@ public class StatsLibrary {
 	
 	
 	/**
-	 * 
+	 * Calculates the probability using Tchebysheff's Theorem
 	 * @param min min is the minimum value needed for the Tchebysheff's Theorem 
 	 * @param max max is the maximum value needed for the Tchebysheff's Theorem
 	 * @param mean mean is the mean needed for the Tchebysheff's Theorem

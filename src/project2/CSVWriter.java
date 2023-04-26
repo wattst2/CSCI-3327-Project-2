@@ -30,8 +30,7 @@ public class CSVWriter {
 		return (int) (Math.pow(x, 2) + (x * 2) + 1);
 	}
 
-	/**
-	 * 
+	/** 
 	 * Writes the outputs of x^2 + 2x + 1 using {@link #functionSolver(int)} and
 	 * writes the inputs and outputs to a CSV file named "output.csv".
 	 * 
@@ -57,7 +56,7 @@ public class CSVWriter {
 		try {
 			File data = new File("data.csv");
 			FileWriter fileWriter = new FileWriter(data);
-			fileWriter.write("x,y");
+			fileWriter.write("x, y");
 
 			for (int i = min; i < (max + 1); i++) {
 				int value = functionSolver(xValue);
@@ -65,7 +64,7 @@ public class CSVWriter {
 				xValue++;
 			}
 			fileWriter.close();
-			System.out.println("output.csv location: " + "\n" + data.getAbsolutePath());
+			System.out.println("data.csv location: " + "\n" + data.getAbsolutePath());
 		} catch (IOException e) {
 			System.out.println("Error. Please try again.");
 			e.printStackTrace();
@@ -154,7 +153,6 @@ public class CSVWriter {
 	}
 
 	/**
-	 * 
 	 * Takes each element of a list and averages it with a specific range of points
 	 * around it, also known as "smoothing".
 	 * 

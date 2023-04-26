@@ -1,7 +1,7 @@
 package project2;
 
 /**
- * Tests ApacheGraphing and its methods.
+ * Tests JFreeChartsGraphing and its methods.
  * @author tqwatts
  */
 public class TestJFreeChartsGrapher {

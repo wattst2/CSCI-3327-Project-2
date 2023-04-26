@@ -2,6 +2,8 @@ package project2;
 
 import javax.swing.JFrame;
 
+import org.apache.commons.math3.random.RandomDataGenerator;
+import org.apache.commons.math3.random.RandomGenerator;
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
@@ -14,13 +16,17 @@ import org.jfree.ui.RefineryUtilities;
 import org.jfree.chart.ChartPanel;
 
 /**
- * A program that implements Apache's Commons Library version 3.61 and
+ * A program that implements Apache Commons Math Library version 3.61 and
  * JFreeCharts version 1.0.19 to graph a function, salt the graph with a range
  * of randomized numbers, and smooth the graph using a moving average.
  * 
  * The program produces three graphs, the original's function graph, the salted
  * graph, and the smoothed graph.
+ * 
  * @author Ta'Quawn Watts
+ * @see <a href=
+ *      "https://www.edureka.co/community/4028/how-to-import-a-jar-file-in-eclipse">Importing
+ *      jars into Eclipse source</a>
  */
 
 public class JFreeChartsGrapher {
@@ -96,6 +102,9 @@ public class JFreeChartsGrapher {
 	 * @see <a href=
 	 *      "https://www.jfree.org/jfreechart/javadoc/org/jfree/data/xy/XYSeries.html/">XYSeries
 	 *      documentation</a>
+	 * @see <a href=
+	 *      "https://www.baeldung.com/java-generating-random-numbers">RandomDataGenerator
+	 *      source</a>
 	 */
 	public XYSeries saltXY(XYSeries functionXY, int saltMin, int saltMax) {
 
@@ -122,7 +131,8 @@ public class JFreeChartsGrapher {
 				negRand = -1;
 			}
 
-			double randNum = (Math.random() * (saltMax - saltMin) + saltMin) * negRand;
+			RandomDataGenerator rand = new RandomDataGenerator();
+			int randNum = rand.nextInt(saltMin, saltMax) * negRand;
 			saltValues[i] = saltValues[i] + randNum;
 			saltedSeries.add(functionXY.getX(i), saltValues[i]);
 		}
